@@ -12,7 +12,6 @@
         <EntityTypeShape EntityType="moviedbModel.Report" Width="1.5" PointX="5.75" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="moviedbModel.SelectPos" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
         <EntityTypeShape EntityType="moviedbModel.Showtime" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="moviedbModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="moviedbModel.FK_Booking_Member" ManuallyRouted="false" />
         <AssociationConnector Association="moviedbModel.FK_Booking_Movies" ManuallyRouted="false" />
         <AssociationConnector Association="moviedbModel.FK_SelectPos_Movies" ManuallyRouted="false" />

@@ -27,7 +27,7 @@
           <Property Name="Phone" Type="varchar" MaxLength="12" />
           <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Address" Type="nvarchar" MaxLength="50" />
-          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar(max)" Nullable="false" />
           <Property Name="Gender" Type="varchar" MaxLength="10" />
           <Property Name="BirthDate" Type="date" />
           <Property Name="EmployeeName" Type="nvarchar" MaxLength="100" />
@@ -38,10 +38,8 @@
           </Key>
           <Property Name="idMember" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MemberName" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="Phone" Type="varchar" MaxLength="12" />
           <Property Name="Email" Type="varchar" MaxLength="50" />
-          <Property Name="Password" Type="nchar" MaxLength="10" Nullable="false" />
           <Property Name="Address" Type="varchar" MaxLength="50" />
           <Property Name="BirthDate" Type="date" />
           <Property Name="Gender" Type="varchar" MaxLength="10" />
@@ -89,16 +87,6 @@
           <Property Name="EndTime" Type="varchar" MaxLength="50" />
           <Property Name="Seat" Type="int" />
           <Property Name="Theater" Type="int" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <Association Name="FK_Booking_Member">
           <End Role="Member" Type="Self.Member" Multiplicity="1" />
@@ -160,7 +148,6 @@
           <EntitySet Name="Report" EntityType="Self.Report" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SelectPos" EntityType="Self.SelectPos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Showtime" EntityType="Self.Showtime" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Booking_Member" Association="Self.FK_Booking_Member">
             <End Role="Member" EntitySet="Member" />
             <End Role="Booking" EntitySet="Booking" />
@@ -206,7 +193,7 @@
           <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="BirthDate" Type="DateTime" Precision="0" />
           <Property Name="EmployeeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -217,10 +204,8 @@
           </Key>
           <Property Name="idMember" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MemberName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="BirthDate" Type="DateTime" Precision="0" />
           <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
@@ -274,16 +259,6 @@
           <Property Name="Seat" Type="Int32" />
           <Property Name="Theater" Type="Int32" />
           <NavigationProperty Name="Movy" Relationship="Self.FK_Showtime_Movies" FromRole="Showtime" ToRole="Movies" />
-        </EntityType>
-        <EntityType Name="sysdiagram">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="FK_Booking_Member">
           <End Role="Member" Type="Self.Member" Multiplicity="1" />
@@ -341,7 +316,6 @@
           <EntitySet Name="Reports" EntityType="Self.Report" />
           <EntitySet Name="SelectPos" EntityType="Self.SelectPos" />
           <EntitySet Name="Showtimes" EntityType="Self.Showtime" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <AssociationSet Name="FK_Booking_Member" Association="Self.FK_Booking_Member">
             <End Role="Member" EntitySet="Members" />
             <End Role="Booking" EntitySet="Bookings" />
@@ -403,10 +377,8 @@
               <MappingFragment StoreEntitySet="Member">
                 <ScalarProperty Name="idMember" ColumnName="idMember" />
                 <ScalarProperty Name="MemberName" ColumnName="MemberName" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
@@ -458,17 +430,6 @@
                 <ScalarProperty Name="EndTime" ColumnName="EndTime" />
                 <ScalarProperty Name="Seat" ColumnName="Seat" />
                 <ScalarProperty Name="Theater" ColumnName="Theater" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="moviedbModel.sysdiagram">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
