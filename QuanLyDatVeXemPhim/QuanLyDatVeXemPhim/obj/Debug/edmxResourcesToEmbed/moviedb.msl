@@ -35,10 +35,8 @@
         <MappingFragment StoreEntitySet="Member">
           <ScalarProperty Name="idMember" ColumnName="idMember" />
           <ScalarProperty Name="MemberName" ColumnName="MemberName" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
           <ScalarProperty Name="Gender" ColumnName="Gender" />
