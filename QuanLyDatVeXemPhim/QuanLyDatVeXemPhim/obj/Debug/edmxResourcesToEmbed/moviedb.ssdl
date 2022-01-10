@@ -33,10 +33,8 @@
     </Key>
     <Property Name="idMember" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MemberName" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Phone" Type="varchar" MaxLength="12" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
-    <Property Name="Password" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="Address" Type="varchar" MaxLength="50" />
     <Property Name="BirthDate" Type="date" />
     <Property Name="Gender" Type="varchar" MaxLength="10" />

@@ -14,3 +14,4 @@ D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.xml
 D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.SqlServer.xml
 D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.CopyComplete
 D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyVexemphim.resources
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyKhachhang.resources
