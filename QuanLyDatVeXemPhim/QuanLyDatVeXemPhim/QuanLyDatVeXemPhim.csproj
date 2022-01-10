@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBD0D92A-A32A-4BF9-A217-516E874E222A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyDatVeXemPhim</RootNamespace>
+    <AssemblyName>QuanLyDatVeXemPhim</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BUS\BUS_Phim.cs" />
+    <Compile Include="BUS\BUS_Ve.cs" />
+    <Compile Include="DAO\DAO_Phim.cs" />
+    <Compile Include="DAO\DAO_Ve.cs" />
+    <Compile Include="Employee.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FQuanlyPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuanlyPhim.Designer.cs">
+      <DependentUpon>FQuanlyPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQuanlyVexemphim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuanlyVexemphim.Designer.cs">
+      <DependentUpon>FQuanlyVexemphim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="moviedb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moviedb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="moviedb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="moviedb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moviedb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Movy.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPos.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Showtime.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FQuanlyPhim.resx">
+      <DependentUpon>FQuanlyPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuanlyVexemphim.resx">
+      <DependentUpon>FQuanlyVexemphim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="moviedb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>moviedb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="moviedb.edmx.diagram">
+      <DependentUpon>moviedb.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="moviedb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>moviedb.edmx</DependentUpon>
+      <LastGenOutput>moviedb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="moviedb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>moviedb.edmx</DependentUpon>
+      <LastGenOutput>moviedb.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

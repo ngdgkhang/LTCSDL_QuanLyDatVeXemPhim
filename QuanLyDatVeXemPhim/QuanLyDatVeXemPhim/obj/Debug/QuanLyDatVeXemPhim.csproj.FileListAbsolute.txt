@@ -1,0 +1,16 @@
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\QuanLyDatVeXemPhim.exe.config
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\QuanLyDatVeXemPhim.exe
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\QuanLyDatVeXemPhim.pdb
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.AssemblyReference.cache
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyPhim.resources
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.Properties.Resources.resources
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.GenerateResource.cache
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.CoreCompileInputs.cache
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.exe
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.pdb
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.dll
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.SqlServer.dll
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.xml
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.SqlServer.xml
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.CopyComplete
+D:\LTCSDL\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyVexemphim.resources
