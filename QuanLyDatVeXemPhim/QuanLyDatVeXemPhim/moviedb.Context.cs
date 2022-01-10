@@ -34,7 +34,6 @@ namespace QuanLyDatVeXemPhim
         public virtual DbSet<Report> Reports { get; set; }
         public virtual DbSet<SelectPos> SelectPos { get; set; }
         public virtual DbSet<Showtime> Showtimes { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     
         public virtual ObjectResult<string> sp_Chodaconguoi(Nullable<int> maPhim, string xuatchieu)
         {

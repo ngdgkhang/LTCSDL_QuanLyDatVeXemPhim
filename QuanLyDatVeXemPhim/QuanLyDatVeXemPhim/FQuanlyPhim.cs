@@ -42,23 +42,66 @@ namespace QuanLyDatVeXemPhim
         {
             if (e.RowIndex >= 0 && e.RowIndex < gVPhim.Rows.Count)
             {
-                try
+                for (int i = 0; i < 7; i++)
                 {
-                    txtMaphim.Text = gVPhim.Rows[e.RowIndex].Cells[0].Value.ToString();
-                    txtTenPhim.Text = gVPhim.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    txtDienvien.Text = gVPhim.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    txtTheloai.Text = gVPhim.Rows[e.RowIndex].Cells[2].Value.ToString();
-                    dtNgaykhoichieu.Text = gVPhim.Rows[e.RowIndex].Cells[4].Value.ToString();
-                    txtDodai.Text = gVPhim.Rows[e.RowIndex].Cells[5].Value.ToString();
-                    txtDotuoi.Text = gVPhim.Rows[e.RowIndex].Cells[6].Value.ToString();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    if (gVPhim.Rows[e.RowIndex].Cells[i].Value != null && !string.IsNullOrWhiteSpace(gVPhim.Rows[e.RowIndex].Cells[i].Value.ToString()))
+                    {
+                        switch (i)
+                        {
+                            case 0:
+                                txtMaphim.Text = gVPhim.Rows[e.RowIndex].Cells[0].Value.ToString();
+                                break;
+                            case 1:
+                                txtTenPhim.Text = gVPhim.Rows[e.RowIndex].Cells[1].Value.ToString();
+                                break;
+                            case 2:
+                                txtTheloai.Text = gVPhim.Rows[e.RowIndex].Cells[2].Value.ToString();
+                                break;
+                            case 3:
+                                txtDienvien.Text = gVPhim.Rows[e.RowIndex].Cells[3].Value.ToString();
+                                break;
+                            case 4:
+                                dtNgaykhoichieu.Text = gVPhim.Rows[e.RowIndex].Cells[4].Value.ToString();
+                                break;
+                            case 5:
+                                txtDodai.Text = gVPhim.Rows[e.RowIndex].Cells[5].Value.ToString();
+                                break;
+                            case 6:
+                                txtDotuoi.Text = gVPhim.Rows[e.RowIndex].Cells[6].Value.ToString();
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (i)
+                        {
+                            case 0:
+                                txtMaphim.Text = string.Empty;
+                                break;
+                            case 1:
+                                txtTenPhim.Text = string.Empty;
+                                break;
+                            case 2:
+                                txtTheloai.Text = string.Empty;
+                                break;
+                            case 3:
+                                txtDienvien.Text = string.Empty;
+                                break;
+                            case 4:
+                                dtNgaykhoichieu.Text = string.Empty;
+                                break;
+                            case 5:
+                                txtDodai.Text = string.Empty;
+                                break;
+                            case 6:
+                                txtDotuoi.Text = string.Empty;
+                                break;
+                        }
+                    }
                 }
             }
+        
         }
-
         private void btThem_Click(object sender, EventArgs e)
         {
             Movy movies = new Movy();
@@ -113,5 +156,6 @@ namespace QuanLyDatVeXemPhim
                 MessageBox.Show("Sửa phim thất bại!");
             }
         }
+
     }
 }

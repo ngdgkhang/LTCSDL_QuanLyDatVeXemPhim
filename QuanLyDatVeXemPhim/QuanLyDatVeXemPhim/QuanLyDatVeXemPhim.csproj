@@ -58,12 +58,20 @@
     <Compile Include="Booking.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
+    <Compile Include="BUS\BUS_Khachhang.cs" />
     <Compile Include="BUS\BUS_Phim.cs" />
     <Compile Include="BUS\BUS_Ve.cs" />
+    <Compile Include="DAO\DAO_Khachhang.cs" />
     <Compile Include="DAO\DAO_Phim.cs" />
     <Compile Include="DAO\DAO_Ve.cs" />
     <Compile Include="Employee.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FQuanlyKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuanlyKhachhang.Designer.cs">
+      <DependentUpon>FQuanlyKhachhang.cs</DependentUpon>
     </Compile>
     <Compile Include="FQuanlyPhim.cs">
       <SubType>Form</SubType>
@@ -112,6 +120,9 @@
     <Compile Include="sysdiagram.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FQuanlyKhachhang.resx">
+      <DependentUpon>FQuanlyKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FQuanlyPhim.resx">
       <DependentUpon>FQuanlyPhim.cs</DependentUpon>
     </EmbeddedResource>
