@@ -24,7 +24,7 @@
     <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="BirthDate" Type="DateTime" Precision="0" />
     <Property Name="EmployeeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -93,16 +93,6 @@
     <Property Name="Theater" Type="Int32" />
     <NavigationProperty Name="Movy" Relationship="Self.FK_Showtime_Movies" FromRole="Showtime" ToRole="Movies" />
   </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <Association Name="FK_Booking_Member">
     <End Role="Member" Type="Self.Member" Multiplicity="1" />
     <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
@@ -159,7 +149,6 @@
     <EntitySet Name="Reports" EntityType="Self.Report" />
     <EntitySet Name="SelectPos" EntityType="Self.SelectPos" />
     <EntitySet Name="Showtimes" EntityType="Self.Showtime" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <AssociationSet Name="FK_Booking_Member" Association="Self.FK_Booking_Member">
       <End Role="Member" EntitySet="Members" />
       <End Role="Booking" EntitySet="Bookings" />

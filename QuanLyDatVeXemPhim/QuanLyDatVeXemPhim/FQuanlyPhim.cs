@@ -113,5 +113,6 @@ namespace QuanLyDatVeXemPhim
                 MessageBox.Show("Sửa phim thất bại!");
             }
         }
+
     }
 }
