@@ -132,5 +132,6 @@ namespace QuanLyDatVeXemPhim
                 txtconfirm.UseSystemPasswordChar = true;
             }
         }
+
     }
 }

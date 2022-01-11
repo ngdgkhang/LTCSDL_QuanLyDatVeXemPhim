@@ -49,3 +49,7 @@ D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\Ent
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.CopyComplete
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.exe
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.pdb
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyKhachhang.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanLyNhanVien.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FDashBoard.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FHome.resources

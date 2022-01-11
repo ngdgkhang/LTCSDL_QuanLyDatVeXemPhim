@@ -26,6 +26,7 @@ namespace QuanLyDatVeXemPhim
             passtxt.UseSystemPasswordChar = true;
         }
 
+        
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             if (usernametxt.Text == "") {
@@ -42,6 +43,9 @@ namespace QuanLyDatVeXemPhim
                 if(bDangNhap.CheckUser(usernametxt.Text, hashpass) == true)
                 {
                     MessageBox.Show("Login ok!");
+                    FDashBoard menu = new FDashBoard();
+                    this.Hide();
+                    menu.Show();
                 }
                 else
                 {
@@ -50,17 +54,28 @@ namespace QuanLyDatVeXemPhim
             }
         }
 
-        private void showpassw_CheckedChanged(object sender, EventArgs e)
-        {
-            if (showpassw.Checked == true) passtxt.UseSystemPasswordChar = false;
-            else passtxt.UseSystemPasswordChar = true;
-        }
-
         private void SignUpbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             f = new FDangKy();
             f.Show();
+        }
+
+        private void exitbtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void hidebtn_Click(object sender, EventArgs e)
+        {
+            passtxt.UseSystemPasswordChar = false;
+            showbtn.BringToFront();
+        }
+
+        private void showbtn_Click(object sender, EventArgs e)
+        {
+            passtxt.UseSystemPasswordChar = true;
+            hidebtn.BringToFront();
         }
     }
 }
