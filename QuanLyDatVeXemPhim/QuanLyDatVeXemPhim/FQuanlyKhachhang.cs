@@ -94,17 +94,17 @@ namespace QuanLyDatVeXemPhim
             }
         }
 
-        private void gVKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void gVKH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < gVKH.Rows.Count)
             {
                 for (int i = 0; i < 7; i++)
-                {     
+                {
                     if (gVKH.Rows[e.RowIndex].Cells[i].Value != null && !string.IsNullOrWhiteSpace(gVKH.Rows[e.RowIndex].Cells[i].Value.ToString()))
                     {
-                        switch(i)
+                        switch (i)
                         {
-                            case 0: 
+                            case 0:
                                 txtMaKH.Text = gVKH.Rows[e.RowIndex].Cells[0].Value.ToString();
                                 break;
                             case 1:
@@ -125,7 +125,7 @@ namespace QuanLyDatVeXemPhim
                             case 6:
                                 cbGioitinh.Text = gVKH.Rows[e.RowIndex].Cells[6].Value.ToString();
                                 break;
-                        }       
+                        }
                     }
                     else
                     {
@@ -157,6 +157,5 @@ namespace QuanLyDatVeXemPhim
                 }
             }
         }
-
     }
 }

@@ -382,7 +382,7 @@ namespace QuanLyDatVeXemPhim
             this.gVKH.RowTemplate.Height = 28;
             this.gVKH.Size = new System.Drawing.Size(568, 251);
             this.gVKH.TabIndex = 0;
-            this.gVKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVKH_CellContentClick);
+            this.gVKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVKH_CellClick);
             // 
             // btThongke
             // 

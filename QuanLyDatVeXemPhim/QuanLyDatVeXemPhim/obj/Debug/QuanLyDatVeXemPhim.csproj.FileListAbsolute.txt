@@ -49,3 +49,4 @@ D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\Ent
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.CopyComplete
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.exe
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.pdb
+D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.csproj.AssemblyReference.cache
