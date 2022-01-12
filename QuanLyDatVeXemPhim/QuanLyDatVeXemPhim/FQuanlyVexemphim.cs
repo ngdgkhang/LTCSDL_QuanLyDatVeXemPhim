@@ -17,6 +17,7 @@ namespace QuanLyDatVeXemPhim
         BUS_Ve bUS_Ve;
         bool flat = false;
         string vitringoi = null;
+        int idmovie = 0;
         public FQuanlyVexemphim()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace QuanLyDatVeXemPhim
             bUS_Ve.ListKhachhang(cbTenKH);
             bUS_Ve.ListPhim(cbPhim);
             flat = true;
+            cbChongoi.Enabled = false;
         }
 
         private void gVVe_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -82,10 +84,11 @@ namespace QuanLyDatVeXemPhim
 
         private void cbPhim_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int id = 0 ;
-            if (flat) id = int.Parse(cbPhim.SelectedValue.ToString());
-            bUS_Ve.ListXuatchieu(cbXuatchieu,id);
-            txtMaphim.Text = id.ToString();
+            
+            if (flat) idmovie = int.Parse(cbPhim.SelectedValue.ToString());
+            bUS_Ve.ListXuatchieu(cbXuatchieu,idmovie);
+            txtMaphim.Text = idmovie.ToString();
+            cbChongoi.Enabled = false;
         }
 
         private void cbXuatchieu_SelectedIndexChanged(object sender, EventArgs e)
@@ -101,6 +104,7 @@ namespace QuanLyDatVeXemPhim
                 txtStarttime.Text = xc.StartTime.ToString();
                 txtEndtime.Text = xc.EndTime.ToString();
                 Loadchongoi();
+                
             }    
         }
 
@@ -148,6 +152,7 @@ namespace QuanLyDatVeXemPhim
         }   
         private void Loadchongoi()
         {
+           
             string chongoi = null;
             Regex trimmer = new Regex(@"\s\s+");
             string showtime = "Xuất chiếu " + cbXuatchieu.SelectedValue.ToString() + ": " + txtStarttime.Text + " - " + txtEndtime.Text;
@@ -157,6 +162,17 @@ namespace QuanLyDatVeXemPhim
             }
             else chongoi = "Chưa có khách hàng đặt vé!";
             txtChoconguoi.Text = trimmer.Replace(chongoi, " ");
+        }
+
+        private void cbPhim_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            cbXuatchieu.Enabled = true;
+            cbChongoi.Enabled = false;
+        }
+
+        private void cbXuatchieu_SelectedValueChanged(object sender, EventArgs e)
+        {
+            cbChongoi.Enabled = true;
         }
     }
 }

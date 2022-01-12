@@ -16,7 +16,7 @@ namespace QuanLyDatVeXemPhim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FQuanlyKhachhang());
+            Application.Run(new FQuanlyVexemphim());
         }
     }
 }
