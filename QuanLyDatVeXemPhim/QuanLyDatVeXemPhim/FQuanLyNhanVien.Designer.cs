@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyDatVeXemPhim
 {
-    partial class FQuanlyKhachhang
+    partial class FQuanLyNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -34,11 +34,11 @@ namespace QuanLyDatVeXemPhim
             this.dtNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.cbGioitinh = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtTenKH = new System.Windows.Forms.TextBox();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtDiachi = new System.Windows.Forms.TextBox();
             this.txtDienthoai = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,7 +58,6 @@ namespace QuanLyDatVeXemPhim
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
-            this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gVKH = new System.Windows.Forms.DataGridView();
             this.btThongke = new System.Windows.Forms.Button();
@@ -73,9 +72,9 @@ namespace QuanLyDatVeXemPhim
             this.hoTenNhanVienLabel.AutoSize = true;
             this.hoTenNhanVienLabel.Location = new System.Drawing.Point(140, 29);
             this.hoTenNhanVienLabel.Name = "hoTenNhanVienLabel";
-            this.hoTenNhanVienLabel.Size = new System.Drawing.Size(89, 13);
+            this.hoTenNhanVienLabel.Size = new System.Drawing.Size(79, 13);
             this.hoTenNhanVienLabel.TabIndex = 2;
-            this.hoTenNhanVienLabel.Text = "Tên khách hàng:";
+            this.hoTenNhanVienLabel.Text = "Tên nhân viên:";
             // 
             // label1
             // 
@@ -84,9 +83,9 @@ namespace QuanLyDatVeXemPhim
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(154, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 20);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DANH SÁCH KHÁCH HÀNG";
+            this.label1.Text = "DANH SÁCH NHÂN VIÊN";
             // 
             // groupBox1
             // 
@@ -94,11 +93,11 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.cbGioitinh);
             this.groupBox1.Controls.Add(this.hoTenNhanVienLabel);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtTenKH);
+            this.groupBox1.Controls.Add(this.txtTenNV);
             this.groupBox1.Controls.Add(this.txtDiachi);
             this.groupBox1.Controls.Add(this.txtDienthoai);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtMaKH);
+            this.groupBox1.Controls.Add(this.txtMaNV);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label7);
@@ -136,16 +135,16 @@ namespace QuanLyDatVeXemPhim
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(14, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 13);
+            this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Mã khách hàng:";
+            this.label5.Text = "Mã nhân viên:";
             // 
-            // txtTenKH
+            // txtTenNV
             // 
-            this.txtTenKH.Location = new System.Drawing.Point(232, 27);
-            this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(200, 20);
-            this.txtTenKH.TabIndex = 3;
+            this.txtTenNV.Location = new System.Drawing.Point(232, 27);
+            this.txtTenNV.Name = "txtTenNV";
+            this.txtTenNV.Size = new System.Drawing.Size(200, 20);
+            this.txtTenNV.TabIndex = 3;
             // 
             // txtDiachi
             // 
@@ -168,13 +167,13 @@ namespace QuanLyDatVeXemPhim
             this.txtEmail.Size = new System.Drawing.Size(326, 20);
             this.txtEmail.TabIndex = 3;
             // 
-            // txtMaKH
+            // txtMaNV
             // 
-            this.txtMaKH.Enabled = false;
-            this.txtMaKH.Location = new System.Drawing.Point(106, 27);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(24, 20);
-            this.txtMaKH.TabIndex = 3;
+            this.txtMaNV.Enabled = false;
+            this.txtMaNV.Location = new System.Drawing.Point(106, 27);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(24, 20);
+            this.txtMaNV.TabIndex = 3;
             // 
             // label3
             // 
@@ -305,7 +304,6 @@ namespace QuanLyDatVeXemPhim
             // 
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btSua);
-            this.groupBox2.Controls.Add(this.btThem);
             this.groupBox2.Location = new System.Drawing.Point(203, 447);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(246, 59);
@@ -324,23 +322,13 @@ namespace QuanLyDatVeXemPhim
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(88, 13);
+            this.btSua.Location = new System.Drawing.Point(28, 14);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(76, 39);
             this.btSua.TabIndex = 0;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
-            // 
-            // btThem
-            // 
-            this.btThem.Location = new System.Drawing.Point(6, 14);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(76, 39);
-            this.btThem.TabIndex = 0;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // groupBox3
             // 
@@ -374,7 +362,7 @@ namespace QuanLyDatVeXemPhim
             this.btThongke.Text = "Thống kê";
             this.btThongke.UseVisualStyleBackColor = true;
             // 
-            // FQuanlyKhachhang
+            // FQuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -384,9 +372,9 @@ namespace QuanLyDatVeXemPhim
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "FQuanlyKhachhang";
-            this.Text = "Danh mục khách hàng";
-            this.Load += new System.EventHandler(this.FQuanlyKhachhang_Load);
+            this.Name = "FQuanLyNhanVien";
+            this.Text = "Danh mục nhân viên";
+            this.Load += new System.EventHandler(this.FQuanlyNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -414,7 +402,6 @@ namespace QuanLyDatVeXemPhim
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label hoTenNhanVienLabel;
         private System.Windows.Forms.DataGridView gVKH;
@@ -427,10 +414,10 @@ namespace QuanLyDatVeXemPhim
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btThongke;
-        private System.Windows.Forms.TextBox txtTenKH;
+        private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.TextBox txtDienthoai;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label3;
@@ -441,5 +428,6 @@ namespace QuanLyDatVeXemPhim
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.TextBox txtDiachi;
         private System.Windows.Forms.Label label7;
+        
     }
 }

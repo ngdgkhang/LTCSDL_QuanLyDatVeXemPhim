@@ -66,11 +66,13 @@
     <Compile Include="BUS\BUS_DangKy.cs" />
     <Compile Include="BUS\BUS_DangNhap.cs" />
     <Compile Include="BUS\BUS_Khachhang.cs" />
+    <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_Phim.cs" />
     <Compile Include="BUS\BUS_Ve.cs" />
     <Compile Include="DAO\DAO_DangKy.cs" />
     <Compile Include="DAO\DAO_DangNhap.cs" />
     <Compile Include="DAO\DAO_Khachhang.cs" />
+    <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_Phim.cs" />
     <Compile Include="DAO\DAO_Ve.cs" />
     <Compile Include="Employee.cs">
@@ -88,11 +90,29 @@
     <Compile Include="FDangNhap.Designer.cs">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDashBoard.Designer.cs">
+      <DependentUpon>FDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHome.Designer.cs">
+      <DependentUpon>FHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="FQuanlyKhachhang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FQuanlyKhachhang.Designer.cs">
       <DependentUpon>FQuanlyKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuanLyNhanVien.Designer.cs">
+      <DependentUpon>FQuanLyNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FQuanlyPhim.cs">
       <SubType>Form</SubType>
@@ -147,8 +167,17 @@
     <EmbeddedResource Include="FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDashBoard.resx">
+      <DependentUpon>FDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHome.resx">
+      <DependentUpon>FHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FQuanlyKhachhang.resx">
       <DependentUpon>FQuanlyKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuanLyNhanVien.resx">
+      <DependentUpon>FQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FQuanlyPhim.resx">
       <DependentUpon>FQuanlyPhim.cs</DependentUpon>
@@ -164,6 +193,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="moviedb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -200,6 +230,16 @@
       <DependentUpon>moviedb.edmx</DependentUpon>
       <LastGenOutput>moviedb.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\sign-out.png" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\programmer.png" />
+    <None Include="Resources\employee %281%29.png" />
+    <None Include="Resources\video-player.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

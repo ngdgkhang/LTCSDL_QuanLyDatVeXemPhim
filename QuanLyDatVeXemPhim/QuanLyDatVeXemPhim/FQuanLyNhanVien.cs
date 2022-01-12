@@ -11,19 +11,18 @@ using QuanLyDatVeXemPhim.BUS;
 
 namespace QuanLyDatVeXemPhim
 {
-    public partial class FQuanlyKhachhang : Form
+    public partial class FQuanLyNhanVien : Form
     {
-        BUS_Khachhang bUS_Khachhang;
-        public FQuanlyKhachhang()
+        BUS_NhanVien bNhanVien;
+        public FQuanLyNhanVien()
         {
             InitializeComponent();
-            bUS_Khachhang = new BUS_Khachhang();
+            bNhanVien = new BUS_NhanVien();
         }
-
-        private void ListKhachhang()
+        private void ListNhanVien()
         {
             gVKH.DataSource = null;
-            bUS_Khachhang.ListKhachhang(gVKH);
+            bNhanVien.ListNhanVien(gVKH);
             gVKH.Columns[0].Width = (int)(gVKH.Width * 0.1);
             gVKH.Columns[1].Width = (int)(gVKH.Width * 0.3);
             gVKH.Columns[2].Width = (int)(gVKH.Width * 0.2);
@@ -34,64 +33,64 @@ namespace QuanLyDatVeXemPhim
         }
 
 
-        private void FQuanlyKhachhang_Load(object sender, EventArgs e)
+        private void FQuanlyNhanVien_Load(object sender, EventArgs e)
         {
-            ListKhachhang();
+            ListNhanVien();
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            Member m = new Member();
-            m.MemberName = txtTenKH.Text;
+            Employee m = new Employee();
+            m.EmployeeName = txtTenNV.Text;
             m.Email = txtEmail.Text;
             m.BirthDate = dtNgaysinh.Value;
             m.Address = txtDiachi.Text;
             m.Gender = cbGioitinh.Text;
             m.Phone = txtDienthoai.Text;
-            if(bUS_Khachhang.AddKhachhang(m))
+            if (bNhanVien.AddNhanvien(m))
             {
-                MessageBox.Show("Thêm khách hàng thành công!");
-                ListKhachhang();
+                MessageBox.Show("Thêm nhân viên thành công!");
+                ListNhanVien();
             }
             else
             {
-                MessageBox.Show("Thêm khách hàng thất bại!");
-            } 
-                
+                MessageBox.Show("Thêm nhân viên thất bại!");
+            }
+
         }
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            Member m = new Member();
-            m.idMember = int.Parse(txtMaKH.Text);
-            m.MemberName = txtTenKH.Text;
+            Employee m = new Employee();
+            m.idEmployee = int.Parse(txtMaNV.Text);
+            m.EmployeeName = txtTenNV.Text;
             m.Email = txtEmail.Text;
             m.BirthDate = dtNgaysinh.Value;
             m.Address = txtDiachi.Text;
             m.Gender = cbGioitinh.Text;
             m.Phone = txtDienthoai.Text;
-            if (bUS_Khachhang.UpdateKhachhang(m))
+            if (bNhanVien.UpdateNhanvien(m))
             {
-                MessageBox.Show("Sửa thông tin khách hàng thành công!");
-                ListKhachhang();
+                MessageBox.Show("Sửa thông tin nhân viên thành công!");
+                ListNhanVien();
             }
             else
             {
-                MessageBox.Show("Sửa thông tin khách hàng thất bại!");
+                MessageBox.Show("Sửa thông tin nhân viên thất bại!");
             }
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            int MaKH = int.Parse(gVKH.CurrentRow.Cells[0].Value.ToString());
-            if (bUS_Khachhang.DeleteKhachhang(MaKH))
+            int MaNV = int.Parse(gVKH.CurrentRow.Cells[0].Value.ToString());
+            if (bNhanVien.DeleteNhanvien(MaNV))
             {
-                MessageBox.Show("Xoá khách hàng thành công!");
-                ListKhachhang();
+                MessageBox.Show("Xoá nhân viên thành công!");
+                ListNhanVien();
             }
             else
             {
-                MessageBox.Show("Xoá khách hàng thất bại!");
+                MessageBox.Show("Xoá nhân viên thất bại!");
             }
         }
 
@@ -106,10 +105,10 @@ namespace QuanLyDatVeXemPhim
                         switch (i)
                         {
                             case 0:
-                                txtMaKH.Text = gVKH.Rows[e.RowIndex].Cells[0].Value.ToString();
+                                txtMaNV.Text = gVKH.Rows[e.RowIndex].Cells[0].Value.ToString();
                                 break;
                             case 1:
-                                txtTenKH.Text = gVKH.Rows[e.RowIndex].Cells[1].Value.ToString();
+                                txtTenNV.Text = gVKH.Rows[e.RowIndex].Cells[1].Value.ToString();
                                 break;
                             case 2:
                                 txtDienthoai.Text = gVKH.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -133,10 +132,10 @@ namespace QuanLyDatVeXemPhim
                         switch (i)
                         {
                             case 0:
-                                txtMaKH.Text = string.Empty;
+                                txtMaNV.Text = string.Empty;
                                 break;
                             case 1:
-                                txtTenKH.Text = string.Empty;
+                                txtTenNV.Text = string.Empty;
                                 break;
                             case 2:
                                 txtDienthoai.Text = string.Empty;
