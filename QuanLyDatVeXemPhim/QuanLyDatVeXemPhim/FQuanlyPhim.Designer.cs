@@ -90,8 +90,8 @@ namespace QuanLyDatVeXemPhim
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(487, 0);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(404, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 30);
             this.label1.TabIndex = 0;
@@ -113,7 +113,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.txtTenPhim);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.ngaySinhLabel);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(15, 384);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(814, 163);
@@ -359,7 +359,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox3.Controls.Add(this.gVPhim);
             this.groupBox3.Location = new System.Drawing.Point(10, 33);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1126, 344);
+            this.groupBox3.Size = new System.Drawing.Size(1070, 344);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chung";
@@ -373,7 +373,7 @@ namespace QuanLyDatVeXemPhim
             this.gVPhim.Name = "gVPhim";
             this.gVPhim.RowHeadersWidth = 62;
             this.gVPhim.RowTemplate.Height = 28;
-            this.gVPhim.Size = new System.Drawing.Size(1116, 322);
+            this.gVPhim.Size = new System.Drawing.Size(1061, 322);
             this.gVPhim.TabIndex = 0;
             this.gVPhim.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVPhim_CellClick);
             // 
@@ -396,8 +396,8 @@ namespace QuanLyDatVeXemPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(1178, 718);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(1086, 718);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

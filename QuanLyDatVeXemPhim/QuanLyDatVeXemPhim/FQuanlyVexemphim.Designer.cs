@@ -75,19 +75,20 @@ namespace QuanLyDatVeXemPhim
             // 
             this.hoTenNhanVienLabel.AutoSize = true;
             this.hoTenNhanVienLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.hoTenNhanVienLabel.ForeColor = System.Drawing.Color.White;
+            this.hoTenNhanVienLabel.ForeColor = System.Drawing.Color.Black;
             this.hoTenNhanVienLabel.Location = new System.Drawing.Point(13, 93);
             this.hoTenNhanVienLabel.Name = "hoTenNhanVienLabel";
             this.hoTenNhanVienLabel.Size = new System.Drawing.Size(82, 18);
             this.hoTenNhanVienLabel.TabIndex = 2;
             this.hoTenNhanVienLabel.Text = "Tên phim:";
+            this.hoTenNhanVienLabel.Click += new System.EventHandler(this.hoTenNhanVienLabel_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(453, -2);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(415, -2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 32);
             this.label1.TabIndex = 0;
@@ -113,7 +114,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(11, 337);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(818, 262);
@@ -225,12 +226,13 @@ namespace QuanLyDatVeXemPhim
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(13, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 18);
             this.label2.TabIndex = 11;
             this.label2.Text = "Chỗ ngồi:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtEndtime
             // 
@@ -275,12 +277,13 @@ namespace QuanLyDatVeXemPhim
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(262, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "Rạp:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -305,55 +308,60 @@ namespace QuanLyDatVeXemPhim
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(488, 164);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(100, 18);
             this.label8.TabIndex = 4;
             this.label8.Text = "Giờ bắt đầu:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(13, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tên khách hàng:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(13, 197);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 50);
             this.label9.TabIndex = 4;
             this.label9.Text = "Chỗ đã có người:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(261, 167);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 18);
             this.label7.TabIndex = 4;
             this.label7.Text = "Giờ bắt đầu:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(14, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 18);
             this.label6.TabIndex = 4;
             this.label6.Text = "Xuất chiếu:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -380,6 +388,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -517,8 +526,8 @@ namespace QuanLyDatVeXemPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(1144, 711);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(1066, 711);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

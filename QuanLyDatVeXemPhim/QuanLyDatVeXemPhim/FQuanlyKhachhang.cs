@@ -158,5 +158,10 @@ namespace QuanLyDatVeXemPhim
                 }
             }
         }
+
+        private void txtTenKH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
