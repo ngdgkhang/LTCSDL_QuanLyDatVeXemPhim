@@ -44,9 +44,9 @@ namespace QuanLyDatVeXemPhim
             this.btnNhanvien = new System.Windows.Forms.Button();
             this.btnPhim = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -77,14 +77,14 @@ namespace QuanLyDatVeXemPhim
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 0);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(217, 638);
+            this.panelmenu.Size = new System.Drawing.Size(217, 758);
             this.panelmenu.TabIndex = 0;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::QuanLyDatVeXemPhim.Properties.Resources.sign_out;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(9, 600);
+            this.pictureBox7.Location = new System.Drawing.Point(9, 720);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.TabIndex = 11;
@@ -96,7 +96,7 @@ namespace QuanLyDatVeXemPhim
             this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 588);
+            this.logoutbtn.Location = new System.Drawing.Point(0, 708);
             this.logoutbtn.Name = "logoutbtn";
             this.logoutbtn.Size = new System.Drawing.Size(217, 50);
             this.logoutbtn.TabIndex = 10;
@@ -243,8 +243,23 @@ namespace QuanLyDatVeXemPhim
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(217, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 34);
+            this.panel2.Size = new System.Drawing.Size(1029, 34);
             this.panel2.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(954, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 26);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // exitbtn
             // 
@@ -253,7 +268,7 @@ namespace QuanLyDatVeXemPhim
             this.exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitbtn.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitbtn.ForeColor = System.Drawing.Color.White;
-            this.exitbtn.Location = new System.Drawing.Point(863, 3);
+            this.exitbtn.Location = new System.Drawing.Point(993, 3);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(33, 26);
             this.exitbtn.TabIndex = 0;
@@ -264,33 +279,18 @@ namespace QuanLyDatVeXemPhim
             // mainpanel
             // 
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(217, 0);
+            this.mainpanel.Location = new System.Drawing.Point(217, 34);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(896, 638);
+            this.mainpanel.Size = new System.Drawing.Size(1029, 724);
             this.mainpanel.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(824, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 26);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 638);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1246, 758);
             this.Controls.Add(this.mainpanel);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelmenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FDashBoard";

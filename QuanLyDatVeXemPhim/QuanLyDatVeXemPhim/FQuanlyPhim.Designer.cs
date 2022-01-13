@@ -89,11 +89,11 @@ namespace QuanLyDatVeXemPhim
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(350, 6);
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(487, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 20);
+            this.label1.Size = new System.Drawing.Size(200, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "DANH SÁCH PHIM";
             // 
@@ -113,6 +113,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.txtTenPhim);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.ngaySinhLabel);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(15, 384);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(814, 163);
@@ -123,7 +124,7 @@ namespace QuanLyDatVeXemPhim
             // dtNgaykhoichieu
             // 
             this.dtNgaykhoichieu.Location = new System.Drawing.Point(559, 102);
-            this.dtNgaykhoichieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtNgaykhoichieu.Margin = new System.Windows.Forms.Padding(2);
             this.dtNgaykhoichieu.Name = "dtNgaykhoichieu";
             this.dtNgaykhoichieu.Size = new System.Drawing.Size(204, 20);
             this.dtNgaykhoichieu.TabIndex = 13;
@@ -243,7 +244,6 @@ namespace QuanLyDatVeXemPhim
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -311,32 +311,47 @@ namespace QuanLyDatVeXemPhim
             // 
             // btSua
             // 
+            this.btSua.BackColor = System.Drawing.Color.DarkViolet;
+            this.btSua.FlatAppearance.BorderSize = 0;
+            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSua.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.ForeColor = System.Drawing.Color.White;
             this.btSua.Location = new System.Drawing.Point(230, 14);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(100, 39);
             this.btSua.TabIndex = 2;
             this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.UseVisualStyleBackColor = false;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
+            this.btXoa.BackColor = System.Drawing.Color.DarkViolet;
+            this.btXoa.FlatAppearance.BorderSize = 0;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btXoa.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.ForeColor = System.Drawing.Color.White;
             this.btXoa.Location = new System.Drawing.Point(118, 13);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(106, 39);
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btThem
             // 
+            this.btThem.BackColor = System.Drawing.Color.DarkViolet;
+            this.btThem.FlatAppearance.BorderSize = 0;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThem.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.Location = new System.Drawing.Point(6, 13);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(106, 39);
             this.btThem.TabIndex = 0;
             this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // groupBox3
@@ -344,43 +359,51 @@ namespace QuanLyDatVeXemPhim
             this.groupBox3.Controls.Add(this.gVPhim);
             this.groupBox3.Location = new System.Drawing.Point(10, 33);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(819, 344);
+            this.groupBox3.Size = new System.Drawing.Size(1126, 344);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chung";
             // 
             // gVPhim
             // 
+            this.gVPhim.BackgroundColor = System.Drawing.Color.White;
             this.gVPhim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gVPhim.Location = new System.Drawing.Point(5, 18);
-            this.gVPhim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gVPhim.Margin = new System.Windows.Forms.Padding(2);
             this.gVPhim.Name = "gVPhim";
             this.gVPhim.RowHeadersWidth = 62;
             this.gVPhim.RowTemplate.Height = 28;
-            this.gVPhim.Size = new System.Drawing.Size(808, 322);
+            this.gVPhim.Size = new System.Drawing.Size(1116, 322);
             this.gVPhim.TabIndex = 0;
             this.gVPhim.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVPhim_CellClick);
             // 
             // btThongke
             // 
+            this.btThongke.BackColor = System.Drawing.Color.DarkViolet;
+            this.btThongke.FlatAppearance.BorderSize = 0;
+            this.btThongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThongke.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongke.ForeColor = System.Drawing.Color.White;
             this.btThongke.Location = new System.Drawing.Point(15, 554);
-            this.btThongke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btThongke.Margin = new System.Windows.Forms.Padding(2);
             this.btThongke.Name = "btThongke";
             this.btThongke.Size = new System.Drawing.Size(83, 39);
             this.btThongke.TabIndex = 1;
             this.btThongke.Text = "Thống kê";
-            this.btThongke.UseVisualStyleBackColor = true;
+            this.btThongke.UseVisualStyleBackColor = false;
             // 
             // FQuanlyPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 610);
+            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ClientSize = new System.Drawing.Size(1178, 718);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FQuanlyPhim";
             this.Text = "Danh mục vé xem phim";
             this.Load += new System.EventHandler(this.FQuanlyPhim_Load);

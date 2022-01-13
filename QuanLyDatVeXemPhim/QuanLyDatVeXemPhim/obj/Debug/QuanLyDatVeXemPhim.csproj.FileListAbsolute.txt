@@ -53,3 +53,7 @@ D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\Qua
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FDashBoard.resources
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FHome.resources
 D:\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanLyNhanVien.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FDashBoard.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FHome.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanlyKhachhang.resources
+D:\project\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FQuanLyNhanVien.resources
