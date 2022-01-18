@@ -57,16 +57,6 @@
           <Property Name="Cast" Type="nvarchar(max)" />
           <Property Name="Status" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="Report">
-          <Key>
-            <PropertyRef Name="num" />
-          </Key>
-          <Property Name="num" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="MemberName" Type="nvarchar" MaxLength="50" />
-          <Property Name="Email" Type="varchar" MaxLength="50" />
-          <Property Name="Phone" Type="varchar" MaxLength="12" />
-          <Property Name="Content" Type="nvarchar(max)" />
-        </EntityType>
         <EntityType Name="SelectPos">
           <Key>
             <PropertyRef Name="num" />
@@ -155,7 +145,6 @@
           <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Movies" EntityType="Self.Movies" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Report" EntityType="Self.Report" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SelectPos" EntityType="Self.SelectPos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Showtime" EntityType="Self.Showtime" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
@@ -238,16 +227,6 @@
           <NavigationProperty Name="Bookings" Relationship="Self.FK_Booking_Movies" FromRole="Movies" ToRole="Booking" />
           <NavigationProperty Name="SelectPos" Relationship="Self.FK_SelectPos_Movies" FromRole="Movies" ToRole="SelectPos" />
           <NavigationProperty Name="Showtimes" Relationship="Self.FK_Showtime_Movies" FromRole="Movies" ToRole="Showtime" />
-        </EntityType>
-        <EntityType Name="Report">
-          <Key>
-            <PropertyRef Name="num" />
-          </Key>
-          <Property Name="num" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="MemberName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
-          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="SelectPos">
           <Key>
@@ -335,7 +314,6 @@
           <EntitySet Name="Employees" EntityType="Self.Employee" />
           <EntitySet Name="Members" EntityType="Self.Member" />
           <EntitySet Name="Movies" EntityType="Self.Movy" />
-          <EntitySet Name="Reports" EntityType="Self.Report" />
           <EntitySet Name="SelectPos" EntityType="Self.SelectPos" />
           <EntitySet Name="Showtimes" EntityType="Self.Showtime" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
@@ -419,17 +397,6 @@
                 <ScalarProperty Name="Rate" ColumnName="Rate" />
                 <ScalarProperty Name="Cast" ColumnName="Cast" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Reports">
-            <EntityTypeMapping TypeName="moviedbModel.Report">
-              <MappingFragment StoreEntitySet="Report">
-                <ScalarProperty Name="num" ColumnName="num" />
-                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -31,7 +31,6 @@ namespace QuanLyDatVeXemPhim
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<Movy> Movies { get; set; }
-        public virtual DbSet<Report> Reports { get; set; }
         public virtual DbSet<SelectPos> SelectPos { get; set; }
         public virtual DbSet<Showtime> Showtimes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
