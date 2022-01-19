@@ -163,5 +163,10 @@ namespace QuanLyDatVeXemPhim
         {
 
         }
+
+        private void btThongke_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
