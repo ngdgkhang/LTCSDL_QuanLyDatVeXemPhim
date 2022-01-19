@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyDatVeXemPhim.BUS;
+using QuanLyDatVeXemPhim.Reports;
 
 namespace QuanLyDatVeXemPhim
 {
@@ -157,5 +158,14 @@ namespace QuanLyDatVeXemPhim
             }
         }
 
+        private void btThongke_Click(object sender, EventArgs e)
+        {
+            FReportMovie f = new FReportMovie();
+            CRMovie cRMovie = new CRMovie();
+            cRMovie.SetDataSource(bUS_Phim.ListPhimReport());
+            f.cRViewMovie.ReportSource = cRMovie;
+
+            f.Show();
+        }
     }
 }

@@ -22,6 +22,11 @@ namespace QuanLyDatVeXemPhim.BUS
             //XỬ lý lỗi
             dg.DataSource = dAO_Phim.ListPhim();
         }
+        public dynamic ListPhimReport()
+        {
+            //XỬ lý lỗi
+            return dAO_Phim.ListPhim();
+        }
         public bool AddPhim(Movy m)
         {
             bool result = false;
