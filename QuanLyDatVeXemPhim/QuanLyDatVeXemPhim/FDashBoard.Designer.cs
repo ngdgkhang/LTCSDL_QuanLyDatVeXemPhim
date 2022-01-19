@@ -78,14 +78,14 @@ namespace QuanLyDatVeXemPhim
             this.panelmenu.Location = new System.Drawing.Point(0, 0);
             this.panelmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(289, 933);
+            this.panelmenu.Size = new System.Drawing.Size(289, 882);
             this.panelmenu.TabIndex = 0;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::QuanLyDatVeXemPhim.Properties.Resources.sign_out;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 886);
+            this.pictureBox7.Location = new System.Drawing.Point(16, 830);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 37);
@@ -98,7 +98,7 @@ namespace QuanLyDatVeXemPhim
             this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 871);
+            this.logoutbtn.Location = new System.Drawing.Point(0, 816);
             this.logoutbtn.Margin = new System.Windows.Forms.Padding(4);
             this.logoutbtn.Name = "logoutbtn";
             this.logoutbtn.Size = new System.Drawing.Size(289, 62);
@@ -258,7 +258,7 @@ namespace QuanLyDatVeXemPhim
             this.panel2.Location = new System.Drawing.Point(289, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1304, 42);
+            this.panel2.Size = new System.Drawing.Size(1230, 42);
             this.panel2.TabIndex = 1;
             // 
             // button1
@@ -268,7 +268,7 @@ namespace QuanLyDatVeXemPhim
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1209, 2);
+            this.button1.Location = new System.Drawing.Point(1129, 6);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 32);
@@ -284,7 +284,7 @@ namespace QuanLyDatVeXemPhim
             this.exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitbtn.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitbtn.ForeColor = System.Drawing.Color.White;
-            this.exitbtn.Location = new System.Drawing.Point(1261, 2);
+            this.exitbtn.Location = new System.Drawing.Point(1181, 6);
             this.exitbtn.Margin = new System.Windows.Forms.Padding(4);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(44, 32);
@@ -299,14 +299,14 @@ namespace QuanLyDatVeXemPhim
             this.mainpanel.Location = new System.Drawing.Point(289, 42);
             this.mainpanel.Margin = new System.Windows.Forms.Padding(4);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1304, 891);
+            this.mainpanel.Size = new System.Drawing.Size(1230, 840);
             this.mainpanel.TabIndex = 2;
             // 
             // FDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1593, 933);
+            this.ClientSize = new System.Drawing.Size(1519, 882);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelmenu);

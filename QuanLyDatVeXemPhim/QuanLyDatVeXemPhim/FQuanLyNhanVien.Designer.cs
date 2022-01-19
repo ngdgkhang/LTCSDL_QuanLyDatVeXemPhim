@@ -107,10 +107,10 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(26, 501);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(20, 449);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1185, 315);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -155,7 +155,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.txtTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenNV.Location = new System.Drawing.Point(177, 63);
-            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(401, 28);
             this.txtTenNV.TabIndex = 3;
@@ -164,7 +164,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDiachi.Location = new System.Drawing.Point(177, 251);
-            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiachi.Multiline = true;
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(589, 50);
@@ -174,7 +174,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.txtDienthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDienthoai.Location = new System.Drawing.Point(177, 201);
-            this.txtDienthoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDienthoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtDienthoai.Name = "txtDienthoai";
             this.txtDienthoai.Size = new System.Drawing.Size(575, 28);
             this.txtDienthoai.TabIndex = 3;
@@ -183,7 +183,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtEmail.Location = new System.Drawing.Point(177, 154);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(281, 28);
             this.txtEmail.TabIndex = 3;
@@ -193,7 +193,7 @@ namespace QuanLyDatVeXemPhim
             this.txtMaNV.Enabled = false;
             this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaNV.Location = new System.Drawing.Point(177, 27);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(39, 28);
             this.txtMaNV.TabIndex = 3;
@@ -278,6 +278,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -336,10 +337,10 @@ namespace QuanLyDatVeXemPhim
             // 
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btSua);
-            this.groupBox2.Location = new System.Drawing.Point(937, 824);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(937, 772);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(285, 73);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -352,7 +353,7 @@ namespace QuanLyDatVeXemPhim
             this.btXoa.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoa.ForeColor = System.Drawing.Color.White;
             this.btXoa.Location = new System.Drawing.Point(149, 17);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(125, 48);
             this.btXoa.TabIndex = 1;
@@ -368,7 +369,7 @@ namespace QuanLyDatVeXemPhim
             this.btSua.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ForeColor = System.Drawing.Color.White;
             this.btSua.Location = new System.Drawing.Point(8, 17);
-            this.btSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSua.Margin = new System.Windows.Forms.Padding(4);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(133, 48);
             this.btSua.TabIndex = 0;
@@ -381,10 +382,10 @@ namespace QuanLyDatVeXemPhim
             this.groupBox3.Controls.Add(this.gVKH);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(13, 41);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(1209, 452);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1209, 400);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chung";
@@ -399,7 +400,7 @@ namespace QuanLyDatVeXemPhim
             this.gVKH.Name = "gVKH";
             this.gVKH.RowHeadersWidth = 62;
             this.gVKH.RowTemplate.Height = 28;
-            this.gVKH.Size = new System.Drawing.Size(1195, 424);
+            this.gVKH.Size = new System.Drawing.Size(1195, 366);
             this.gVKH.TabIndex = 0;
             this.gVKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVKH_CellClick);
             // 
@@ -410,7 +411,7 @@ namespace QuanLyDatVeXemPhim
             this.btThongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThongke.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongke.ForeColor = System.Drawing.Color.White;
-            this.btThongke.Location = new System.Drawing.Point(26, 841);
+            this.btThongke.Location = new System.Drawing.Point(21, 789);
             this.btThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThongke.Name = "btThongke";
             this.btThongke.Size = new System.Drawing.Size(92, 47);
@@ -423,14 +424,14 @@ namespace QuanLyDatVeXemPhim
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1235, 901);
+            this.ClientSize = new System.Drawing.Size(1230, 847);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FQuanLyNhanVien";
             this.Text = "Danh mục nhân viên";
             this.Load += new System.EventHandler(this.FQuanlyNhanVien_Load);

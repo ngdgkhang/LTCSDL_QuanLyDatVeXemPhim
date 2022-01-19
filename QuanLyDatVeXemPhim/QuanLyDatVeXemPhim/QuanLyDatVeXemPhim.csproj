@@ -227,6 +227,7 @@
       <DependentUpon>moviedb.edmx</DependentUpon>
       <LastGenOutput>moviedb.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\wallpaperflare.com_wallpaper.jpg" />
     <None Include="Resources\sign-out.png" />
     <None Include="Resources\ticket.png" />
     <None Include="Resources\programmer.png" />

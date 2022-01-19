@@ -117,10 +117,10 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(15, 502);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(15, 385);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1091, 322);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -245,7 +245,7 @@ namespace QuanLyDatVeXemPhim
             this.txtEndtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtEndtime.ForeColor = System.Drawing.Color.Blue;
             this.txtEndtime.Location = new System.Drawing.Point(808, 202);
-            this.txtEndtime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEndtime.Margin = new System.Windows.Forms.Padding(4);
             this.txtEndtime.Name = "txtEndtime";
             this.txtEndtime.Size = new System.Drawing.Size(275, 30);
             this.txtEndtime.TabIndex = 12;
@@ -255,7 +255,7 @@ namespace QuanLyDatVeXemPhim
             this.txtChoconguoi.Enabled = false;
             this.txtChoconguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtChoconguoi.Location = new System.Drawing.Point(141, 245);
-            this.txtChoconguoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChoconguoi.Margin = new System.Windows.Forms.Padding(4);
             this.txtChoconguoi.Multiline = true;
             this.txtChoconguoi.Name = "txtChoconguoi";
             this.txtChoconguoi.Size = new System.Drawing.Size(941, 61);
@@ -267,7 +267,7 @@ namespace QuanLyDatVeXemPhim
             this.txtStarttime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtStarttime.ForeColor = System.Drawing.Color.Turquoise;
             this.txtStarttime.Location = new System.Drawing.Point(480, 202);
-            this.txtStarttime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStarttime.Margin = new System.Windows.Forms.Padding(4);
             this.txtStarttime.Name = "txtStarttime";
             this.txtStarttime.Size = new System.Drawing.Size(163, 30);
             this.txtStarttime.TabIndex = 12;
@@ -277,7 +277,7 @@ namespace QuanLyDatVeXemPhim
             this.txtRap.Enabled = false;
             this.txtRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtRap.Location = new System.Drawing.Point(480, 167);
-            this.txtRap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRap.Margin = new System.Windows.Forms.Padding(4);
             this.txtRap.Name = "txtRap";
             this.txtRap.Size = new System.Drawing.Size(68, 28);
             this.txtRap.TabIndex = 12;
@@ -311,7 +311,7 @@ namespace QuanLyDatVeXemPhim
             this.txtMaphim.Enabled = false;
             this.txtMaphim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaphim.Location = new System.Drawing.Point(141, 28);
-            this.txtMaphim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaphim.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaphim.Name = "txtMaphim";
             this.txtMaphim.Size = new System.Drawing.Size(36, 28);
             this.txtMaphim.TabIndex = 3;
@@ -464,10 +464,10 @@ namespace QuanLyDatVeXemPhim
             // 
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btThem);
-            this.groupBox2.Location = new System.Drawing.Point(917, 815);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(917, 761);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(305, 73);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -480,7 +480,7 @@ namespace QuanLyDatVeXemPhim
             this.btXoa.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoa.ForeColor = System.Drawing.Color.White;
             this.btXoa.Location = new System.Drawing.Point(157, 17);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(141, 48);
             this.btXoa.TabIndex = 1;
@@ -496,7 +496,7 @@ namespace QuanLyDatVeXemPhim
             this.btThem.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.Location = new System.Drawing.Point(8, 17);
-            this.btThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(141, 48);
             this.btThem.TabIndex = 0;
@@ -509,10 +509,10 @@ namespace QuanLyDatVeXemPhim
             this.groupBox3.Controls.Add(this.gVVe);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(13, 41);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(1209, 462);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1209, 336);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chung";
@@ -526,7 +526,7 @@ namespace QuanLyDatVeXemPhim
             this.gVVe.Name = "gVVe";
             this.gVVe.RowHeadersWidth = 62;
             this.gVVe.RowTemplate.Height = 28;
-            this.gVVe.Size = new System.Drawing.Size(1200, 434);
+            this.gVVe.Size = new System.Drawing.Size(1200, 328);
             this.gVVe.TabIndex = 0;
             this.gVVe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVVe_CellClick);
             // 
@@ -537,7 +537,7 @@ namespace QuanLyDatVeXemPhim
             this.btThongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThongke.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongke.ForeColor = System.Drawing.Color.White;
-            this.btThongke.Location = new System.Drawing.Point(15, 841);
+            this.btThongke.Location = new System.Drawing.Point(15, 789);
             this.btThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThongke.Name = "btThongke";
             this.btThongke.Size = new System.Drawing.Size(92, 47);
@@ -550,14 +550,14 @@ namespace QuanLyDatVeXemPhim
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1235, 901);
+            this.ClientSize = new System.Drawing.Size(1230, 847);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FQuanlyVexemphim";
             this.Text = "Danh mục vé xem phim";
             this.Load += new System.EventHandler(this.FQuanlyVexemphim_Load);

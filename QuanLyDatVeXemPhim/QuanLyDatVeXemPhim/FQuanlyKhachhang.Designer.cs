@@ -108,7 +108,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(20, 502);
+            this.groupBox1.Location = new System.Drawing.Point(20, 438);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -278,6 +278,7 @@ namespace QuanLyDatVeXemPhim
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -337,11 +338,11 @@ namespace QuanLyDatVeXemPhim
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btSua);
             this.groupBox2.Controls.Add(this.btThem);
-            this.groupBox2.Location = new System.Drawing.Point(768, 824);
+            this.groupBox2.Location = new System.Drawing.Point(749, 761);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(454, 73);
+            this.groupBox2.Size = new System.Drawing.Size(480, 73);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             // 
@@ -351,7 +352,7 @@ namespace QuanLyDatVeXemPhim
             this.btXoa.FlatAppearance.BorderSize = 0;
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXoa.ForeColor = System.Drawing.Color.White;
-            this.btXoa.Location = new System.Drawing.Point(298, 17);
+            this.btXoa.Location = new System.Drawing.Point(318, 17);
             this.btXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(137, 48);
@@ -366,7 +367,7 @@ namespace QuanLyDatVeXemPhim
             this.btSua.FlatAppearance.BorderSize = 0;
             this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSua.ForeColor = System.Drawing.Color.White;
-            this.btSua.Location = new System.Drawing.Point(149, 17);
+            this.btSua.Location = new System.Drawing.Point(180, 17);
             this.btSua.Margin = new System.Windows.Forms.Padding(4);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(130, 48);
@@ -381,7 +382,7 @@ namespace QuanLyDatVeXemPhim
             this.btThem.FlatAppearance.BorderSize = 0;
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThem.ForeColor = System.Drawing.Color.White;
-            this.btThem.Location = new System.Drawing.Point(-7, 17);
+            this.btThem.Location = new System.Drawing.Point(33, 17);
             this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(139, 48);
@@ -397,7 +398,7 @@ namespace QuanLyDatVeXemPhim
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1216, 453);
+            this.groupBox3.Size = new System.Drawing.Size(1216, 389);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chung";
@@ -411,7 +412,7 @@ namespace QuanLyDatVeXemPhim
             this.gVKH.Name = "gVKH";
             this.gVKH.RowHeadersWidth = 62;
             this.gVKH.RowTemplate.Height = 28;
-            this.gVKH.Size = new System.Drawing.Size(1200, 425);
+            this.gVKH.Size = new System.Drawing.Size(1200, 355);
             this.gVKH.TabIndex = 0;
             this.gVKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVKH_CellClick);
             // 
@@ -421,20 +422,21 @@ namespace QuanLyDatVeXemPhim
             this.btThongke.FlatAppearance.BorderSize = 0;
             this.btThongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThongke.ForeColor = System.Drawing.Color.White;
-            this.btThongke.Location = new System.Drawing.Point(12, 833);
+            this.btThongke.Location = new System.Drawing.Point(19, 778);
             this.btThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThongke.Name = "btThongke";
             this.btThongke.Size = new System.Drawing.Size(92, 47);
             this.btThongke.TabIndex = 1;
             this.btThongke.Text = "Thống kê";
             this.btThongke.UseVisualStyleBackColor = false;
+            this.btThongke.Click += new System.EventHandler(this.btThongke_Click);
             // 
             // FQuanlyKhachhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1235, 901);
+            this.ClientSize = new System.Drawing.Size(1230, 847);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
