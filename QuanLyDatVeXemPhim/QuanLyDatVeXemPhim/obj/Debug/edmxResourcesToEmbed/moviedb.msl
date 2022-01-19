@@ -57,17 +57,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Reports">
-      <EntityTypeMapping TypeName="moviedbModel.Report">
-        <MappingFragment StoreEntitySet="Report">
-          <ScalarProperty Name="num" ColumnName="num" />
-          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Content" ColumnName="Content" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="SelectPos">
       <EntityTypeMapping TypeName="moviedbModel.SelectPos">
         <MappingFragment StoreEntitySet="SelectPos">

@@ -149,9 +149,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report.cs">
-      <DependentUpon>moviedb.tt</DependentUpon>
-    </Compile>
     <Compile Include="SelectPos.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>

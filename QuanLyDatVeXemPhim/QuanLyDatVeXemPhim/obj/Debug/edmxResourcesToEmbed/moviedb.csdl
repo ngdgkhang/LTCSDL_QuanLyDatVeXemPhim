@@ -58,16 +58,6 @@
     <NavigationProperty Name="SelectPos" Relationship="Self.FK_SelectPos_Movies" FromRole="Movies" ToRole="SelectPos" />
     <NavigationProperty Name="Showtimes" Relationship="Self.FK_Showtime_Movies" FromRole="Movies" ToRole="Showtime" />
   </EntityType>
-  <EntityType Name="Report">
-    <Key>
-      <PropertyRef Name="num" />
-    </Key>
-    <Property Name="num" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="MemberName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
-    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="SelectPos">
     <Key>
       <PropertyRef Name="num" />
@@ -154,7 +144,6 @@
     <EntitySet Name="Employees" EntityType="Self.Employee" />
     <EntitySet Name="Members" EntityType="Self.Member" />
     <EntitySet Name="Movies" EntityType="Self.Movy" />
-    <EntitySet Name="Reports" EntityType="Self.Report" />
     <EntitySet Name="SelectPos" EntityType="Self.SelectPos" />
     <EntitySet Name="Showtimes" EntityType="Self.Showtime" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
