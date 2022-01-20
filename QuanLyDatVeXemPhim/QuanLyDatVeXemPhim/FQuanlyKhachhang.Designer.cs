@@ -122,12 +122,15 @@ namespace QuanLyDatVeXemPhim
             this.dtNgaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dtNgaysinh.Location = new System.Drawing.Point(141, 111);
             this.dtNgaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtNgaysinh.MinDate = new System.DateTime(2022, 1, 20, 15, 32, 48, 0);
             this.dtNgaysinh.Name = "dtNgaysinh";
             this.dtNgaysinh.Size = new System.Drawing.Size(425, 27);
             this.dtNgaysinh.TabIndex = 6;
+            this.dtNgaysinh.Value = new System.DateTime(2022, 1, 20, 15, 32, 48, 0);
             // 
             // cbGioitinh
             // 
+            this.cbGioitinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbGioitinh.FormattingEnabled = true;
             this.cbGioitinh.Items.AddRange(new object[] {

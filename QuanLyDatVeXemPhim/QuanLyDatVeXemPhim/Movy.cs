@@ -25,7 +25,7 @@ namespace QuanLyDatVeXemPhim
         public int MovieID { get; set; }
         public string MovieName { get; set; }
         public string Category { get; set; }
-        public System.DateTime ReleaseDate { get; set; }
+        public Nullable<System.DateTime> ReleaseDate { get; set; }
         public string RunningTime { get; set; }
         public string Rate { get; set; }
         public string Cast { get; set; }

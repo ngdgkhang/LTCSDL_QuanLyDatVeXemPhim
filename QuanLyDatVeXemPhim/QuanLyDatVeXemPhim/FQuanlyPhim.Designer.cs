@@ -130,9 +130,11 @@ namespace QuanLyDatVeXemPhim
             // 
             this.dtNgaykhoichieu.Location = new System.Drawing.Point(745, 126);
             this.dtNgaykhoichieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtNgaykhoichieu.MinDate = new System.DateTime(2022, 1, 20, 15, 34, 1, 0);
             this.dtNgaykhoichieu.Name = "dtNgaykhoichieu";
             this.dtNgaykhoichieu.Size = new System.Drawing.Size(271, 22);
             this.dtNgaykhoichieu.TabIndex = 13;
+            this.dtNgaykhoichieu.Value = new System.DateTime(2022, 1, 20, 15, 34, 1, 0);
             // 
             // txtDotuoi
             // 
