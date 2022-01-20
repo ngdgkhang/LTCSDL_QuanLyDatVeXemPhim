@@ -73,6 +73,12 @@
     <Compile Include="Employee.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
+    <Compile Include="FReportMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportMember.Designer.cs">
+      <DependentUpon>FReportMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Member.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
@@ -180,6 +186,12 @@
     <Compile Include="Showtime.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_thongKeKH_Result.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FReportMember.resx">
+      <DependentUpon>FReportMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\CRMember.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRMember.cs</LastGenOutput>

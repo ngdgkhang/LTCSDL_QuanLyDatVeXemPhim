@@ -20,6 +20,10 @@ namespace QuanLyDatVeXemPhim.BUS
         {
             dg.DataSource = dAO_Khachhang.ListKhachhang();
         }
+        public dynamic ListReportKH()
+        {
+            return dAO_Khachhang.ListReportKH();
+        }
 
         public bool AddKhachhang(Member m)
         {

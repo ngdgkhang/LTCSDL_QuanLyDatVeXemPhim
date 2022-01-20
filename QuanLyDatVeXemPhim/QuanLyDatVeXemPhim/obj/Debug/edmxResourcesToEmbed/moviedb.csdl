@@ -156,5 +156,13 @@
       <Parameter Name="MaPhim" Mode="In" Type="Int32" />
       <Parameter Name="Xuatchieu" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="sp_thongKeKH" ReturnType="Collection(moviedbModel.sp_thongKeKH_Result)" />
   </EntityContainer>
+  <ComplexType Name="sp_thongKeKH_Result">
+    <Property Type="Int32" Name="idMember" Nullable="false" />
+    <Property Type="String" Name="MemberName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MovieName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Showtime" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Postition" Nullable="true" MaxLength="10" />
+  </ComplexType>
 </Schema>

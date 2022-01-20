@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="moviedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="moviedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Booking">
           <Key>
             <PropertyRef Name="num" />
@@ -130,6 +130,7 @@
           <Parameter Name="MaPhim" Type="int" Mode="In" />
           <Parameter Name="Xuatchieu" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="sp_thongKeKH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="moviedbModelStoreContainer">
           <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
@@ -154,8 +155,7 @@
             <End Role="Showtime" EntitySet="Showtime" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="moviedbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -315,7 +315,15 @@
             <Parameter Name="MaPhim" Mode="In" Type="Int32" />
             <Parameter Name="Xuatchieu" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="sp_thongKeKH" ReturnType="Collection(moviedbModel.sp_thongKeKH_Result)" />
         </EntityContainer>
+        <ComplexType Name="sp_thongKeKH_Result">
+          <Property Type="Int32" Name="idMember" Nullable="false" />
+          <Property Type="String" Name="MemberName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="MovieName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Showtime" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Postition" Nullable="true" MaxLength="10" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -402,6 +410,17 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="sp_Chodaconguoi" FunctionName="moviedbModel.Store.sp_Chodaconguoi" />
+          <FunctionImportMapping FunctionImportName="sp_thongKeKH" FunctionName="moviedbModel.Store.sp_thongKeKH">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="moviedbModel.sp_thongKeKH_Result">
+                <ScalarProperty Name="idMember" ColumnName="idMember" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+                <ScalarProperty Name="Showtime" ColumnName="Showtime" />
+                <ScalarProperty Name="Postition" ColumnName="Postition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

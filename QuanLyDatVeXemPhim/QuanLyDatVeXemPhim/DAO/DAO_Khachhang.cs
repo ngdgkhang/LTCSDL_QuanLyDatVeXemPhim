@@ -30,6 +30,13 @@ namespace QuanLyDatVeXemPhim.DAO
             return ds;
         }
 
+        public dynamic ListReportKH()
+        {
+            var ds = db.sp_thongKeKH().ToList();
+            return ds;
+
+        }
+
         public void addKhachhang(Member m)
         {
             db.Members.Add(m);

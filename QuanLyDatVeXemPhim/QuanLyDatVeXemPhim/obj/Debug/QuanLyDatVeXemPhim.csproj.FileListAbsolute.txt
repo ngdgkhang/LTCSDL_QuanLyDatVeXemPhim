@@ -98,3 +98,4 @@ C:\Users\nguye\OneDrive\Documents\Quanlyxemphim\LTCSDL_QuanLyDatVeXemPhim\LTCSDL
 C:\Users\nguye\OneDrive\Documents\Quanlyxemphim\LTCSDL_QuanLyDatVeXemPhim\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\nguye\OneDrive\Documents\Quanlyxemphim\LTCSDL_QuanLyDatVeXemPhim\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.xml
 C:\Users\nguye\OneDrive\Documents\Quanlyxemphim\LTCSDL_QuanLyDatVeXemPhim\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nguye\OneDrive\Documents\Quanlyxemphim\LTCSDL_QuanLyDatVeXemPhim\LTCSDL_QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\QuanLyDatVeXemPhim\obj\Debug\QuanLyDatVeXemPhim.FReportMember.resources

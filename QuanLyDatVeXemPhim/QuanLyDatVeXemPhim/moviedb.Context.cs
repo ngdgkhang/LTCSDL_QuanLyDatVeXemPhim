@@ -46,5 +46,10 @@ namespace QuanLyDatVeXemPhim
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_Chodaconguoi", maPhimParameter, xuatchieuParameter);
         }
+    
+        public virtual ObjectResult<sp_thongKeKH_Result> sp_thongKeKH()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_thongKeKH_Result>("sp_thongKeKH");
+        }
     }
 }

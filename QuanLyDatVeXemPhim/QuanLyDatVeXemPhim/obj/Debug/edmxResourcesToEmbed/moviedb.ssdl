@@ -125,6 +125,7 @@
     <Parameter Name="MaPhim" Type="int" Mode="In" />
     <Parameter Name="Xuatchieu" Type="nvarchar" Mode="In" />
   </Function>
+  <Function Name="sp_thongKeKH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="moviedbModelStoreContainer">
     <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />

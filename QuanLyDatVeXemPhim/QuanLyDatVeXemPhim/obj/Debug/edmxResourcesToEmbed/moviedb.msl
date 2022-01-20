@@ -81,5 +81,16 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="sp_Chodaconguoi" FunctionName="moviedbModel.Store.sp_Chodaconguoi" />
+    <FunctionImportMapping FunctionImportName="sp_thongKeKH" FunctionName="moviedbModel.Store.sp_thongKeKH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moviedbModel.sp_thongKeKH_Result">
+          <ScalarProperty Name="idMember" ColumnName="idMember" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="Showtime" ColumnName="Showtime" />
+          <ScalarProperty Name="Postition" ColumnName="Postition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

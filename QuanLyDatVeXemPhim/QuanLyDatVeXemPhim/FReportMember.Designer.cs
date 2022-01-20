@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyDatVeXemPhim
 {
-    partial class FReportMovie
+    partial class FReportMember
     {
         /// <summary>
         /// Required designer variable.
@@ -29,42 +29,37 @@ namespace QuanLyDatVeXemPhim
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FReportMovie));
-            this.CRMovie1 = new QuanLyDatVeXemPhim.Reports.CRMovie();
-            this.cRViewMovie = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.cRViewerMember = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.CRMember1 = new QuanLyDatVeXemPhim.Reports.CRMember();
             this.SuspendLayout();
             // 
-            // cRViewMovie
+            // cRViewerMember
             // 
-            this.cRViewMovie.ActiveViewIndex = 0;
-            this.cRViewMovie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cRViewMovie.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cRViewMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cRViewMovie.Location = new System.Drawing.Point(0, 0);
-            this.cRViewMovie.Name = "cRViewMovie";
-            this.cRViewMovie.ReportSource = this.CRMovie1;
-            this.cRViewMovie.Size = new System.Drawing.Size(800, 450);
-            this.cRViewMovie.TabIndex = 0;
+            this.cRViewerMember.ActiveViewIndex = 0;
+            this.cRViewerMember.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cRViewerMember.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cRViewerMember.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cRViewerMember.Location = new System.Drawing.Point(0, 0);
+            this.cRViewerMember.Name = "cRViewerMember";
+            this.cRViewerMember.ReportSource = this.CRMember1;
+            this.cRViewerMember.Size = new System.Drawing.Size(800, 450);
+            this.cRViewerMember.TabIndex = 0;
             // 
-            // FReportMovie
+            // FReportMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cRViewMovie);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FReportMovie";
-            this.Text = "FReportMovie";
-            this.Load += new System.EventHandler(this.FReportMovie_Load);
+            this.Controls.Add(this.cRViewerMember);
+            this.Name = "FReportMember";
+            this.Text = "ReportMember";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer cRViewMovie;
+        public CrystalDecisions.Windows.Forms.CrystalReportViewer cRViewerMember;
         private Reports.CRMember CRMember1;
-        private Reports.CRMovie CRMovie1;
     }
 }
