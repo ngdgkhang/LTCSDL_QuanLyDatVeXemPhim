@@ -186,7 +186,16 @@
     <Compile Include="Showtime.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
     <Compile Include="sp_thongKeKH_Result.cs">
+      <DependentUpon>moviedb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
       <DependentUpon>moviedb.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FReportMember.resx">
