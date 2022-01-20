@@ -16,6 +16,7 @@
   <EntityType Name="Employees">
     <Key>
       <PropertyRef Name="idEmployee" />
+      <PropertyRef Name="Username" />
     </Key>
     <Property Name="idEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />

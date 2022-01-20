@@ -64,7 +64,7 @@ namespace QuanLyDatVeXemPhim
             em.Email = txtemail.Text;
             em.EmployeeName = txtname.Text;
             em.Password = Hash_SHA1( txtconfirm.Text);
-            if (bDangKy.CheckUser(txtname.Text) == true)
+            if (bDangKy.CheckUser(txtusername.Text) == true)
             {
                 MessageBox.Show("User Name Đã Bị Trùng");
                 return;
@@ -133,5 +133,9 @@ namespace QuanLyDatVeXemPhim
             }
         }
 
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -18,6 +18,7 @@
   <EntityType Name="Employee">
     <Key>
       <PropertyRef Name="idEmployee" />
+      <PropertyRef Name="Username" />
     </Key>
     <Property Name="idEmployee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />

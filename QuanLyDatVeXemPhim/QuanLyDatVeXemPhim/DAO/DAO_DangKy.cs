@@ -20,7 +20,7 @@ namespace QuanLyDatVeXemPhim.DAO
             db.SaveChanges();
         }
 
-        public Employee getUser(String UserName)
+        public Employee getUser(string UserName)
         {
             Employee e = db.Employees.FirstOrDefault(s => s.Username == UserName);
             return e;

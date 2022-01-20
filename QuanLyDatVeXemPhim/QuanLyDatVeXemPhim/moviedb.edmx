@@ -21,6 +21,7 @@
         <EntityType Name="Employees">
           <Key>
             <PropertyRef Name="idEmployee" />
+            <PropertyRef Name="Username" />
           </Key>
           <Property Name="idEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
@@ -178,6 +179,7 @@
         <EntityType Name="Employee">
           <Key>
             <PropertyRef Name="idEmployee" />
+            <PropertyRef Name="Username" />
           </Key>
           <Property Name="idEmployee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />

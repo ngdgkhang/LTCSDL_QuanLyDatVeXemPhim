@@ -22,7 +22,7 @@ namespace QuanLyDatVeXemPhim.BUS
             return flag;
         }
 
-        public bool CheckUser(String name)
+        public bool CheckUser(string name)
         {
             bool flag = false;
             if (dDangKy.getUser(name) != null) flag = true;
